@@ -1,7 +1,7 @@
 import React from 'react'
 import { Form, Input} from '../MainPage/styles'
 
-const NameForm = (props) => {
+const NameForm = (name,age,email,sendData,onChangeAge,onChangeEmail,onChangeName) => {
   return (
     <Form>
         <label>
@@ -14,7 +14,7 @@ const NameForm = (props) => {
         </label>
         <label>
           E-mail:
-          <Input  placeholder="usuario@usuario.com" value={email} onChange={onChangeEmail}/>
+          <Input  placeholder="usuario@usuario.com" value={email} onChange={onChangeEmail} type="email" required/>
         </label>
         <label>
           Confirmação de e-mail:
